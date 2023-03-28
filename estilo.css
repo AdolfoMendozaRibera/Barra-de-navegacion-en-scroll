@@ -1,0 +1,94 @@
+#barra
+{
+    /* La barra permanece fija */
+    position: fixed;
+    display: flex;
+    background-color: white;
+    /* Para que los links se acomoden al medio del bloque */
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    /* Para que ocupen todo el ancho de la pantalla */
+    width: 100%;
+}
+
+#barra img
+{
+    /* Tamaño de la imagen */
+    width: 50px;
+}
+
+#barra a
+{
+    /* para que haiga un espacio separado entre ellos */
+    margin-left: 280px;
+}
+
+#home
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url('imagenes/bosque.jpg');
+    background-size: cover;
+    /* Solo este la parte central de la imagen */
+    background-position: center center;
+    width: 100%;
+    height: 70%;
+    /* Para que la imagen no tape los demas elementos */
+    z-index: -1;
+}
+
+#presentacion
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* Para que el contenido vaya al centro de la imagen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+#presentacion button
+{
+    font-size: 20px;
+}
+
+#presentacion p
+{
+    text-align: center;
+}
+
+
+#about, #services, #tours
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+#about
+{
+    background-color: rebeccapurple;
+    top: 70%;
+}
+
+#services
+{
+    background-color: antiquewhite;
+    top: calc(70% + 80%);
+}
+
+#tours
+{
+    background-color:aquamarine;
+    top: calc(70% + 80% + 80%);
+}
